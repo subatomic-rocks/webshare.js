@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="og:title" content="The OG Title" />
+    <title>The Document Title</title>
+
+    <style>
+        .webshare .webshare-platform {
+            display: inline-block;
+            width: 2em;
+            height: 2em;
+            margin: 0em 0.5em;
+        }
+
+        .webshare .webshare-platform svg path {
+            fill: #333;
+        }
+    </style>
+</head>
+<body>
+    <h3>Default Texts</h3>
+    <div id="target"></div>
+    
+    <h3>Custom Text</h3>
+    <div id="target-custom"></div>
+</body>
+</html>
+
+<script src="../dist/webshare.bundle.js"></script>
+<script>
+    webshare.on('success', console.log);
+    webshare.on('error', console.error);
+    webshare.render(document.getElementById('target'));
+    webshare.render(document.getElementById('target-custom'), {
+        args: {
+            social: {
+                twitter: {
+                    title: 'Cool twitter title',
+                    text: 'Some nice tweet text'
+                }
+            },
+
+            title: 'My other title',
+            text: 'Some cool text'
+        }
+    });
+</script>

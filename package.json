@@ -1,0 +1,22 @@
+{
+  "name": "webshare.js",
+  "version": "0.0.1",
+  "description": "A simple and effective wrapper to Web Sharing API with HTML fallback.",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify": "^3.1.0",
+    "gulp-rename": "^1.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Subatomic",
+  "license": "ISC",
+  "homepage": "https://github.com/subatomic-rocks/webshare.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/subatomic-rocks/webshare.js.git"
+  }
+}
